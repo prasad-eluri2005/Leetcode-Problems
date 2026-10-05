@@ -12,5 +12,6 @@ class Solution:
             res.append(temp.val)
             temp = temp.next
             cnt += 1
-        res1 = res[::-1]
-        return (res[:cnt//2] == res1[:cnt//2])
+        return res == res[::-1]
+        # res1 = res[::-1]
+        # return (res[:cnt//2] == res1[:cnt//2])
