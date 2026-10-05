@@ -14,6 +14,3 @@ class Solution:
             cnt += 1
         res1 = res[::-1]
         return (res[:cnt//2] == res1[:cnt//2])
-        
-
-        print(cnt)
