@@ -12,6 +12,11 @@ class Solution:
             res.append(temp.val)
             temp = temp.next
             cnt += 1
-        return res == res[::-1]
-        # res1 = res[::-1]
-        # return (res[:cnt//2] == res1[:cnt//2])
+        i = 0
+        j = len(res)-1
+        while i < j:
+            if res[i] != res[j]:
+                return False
+            i += 1
+            j -= 1
+        return True
